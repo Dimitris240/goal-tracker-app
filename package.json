@@ -1,0 +1,25 @@
+{
+  "name": "reachyourgoal-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+     "appId": "com.yourgoal.app",
+     "productName": "ReachYourGoal2",
+     "win": {
+    "target": "nsis"
+   }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^41.0.4",
+    "electron-builder": "^26.8.1"
+  }
+}

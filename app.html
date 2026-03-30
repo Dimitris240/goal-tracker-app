@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="container">
+
+  <h1>📈 Η Πρόοδός σου</h1>
+
+  <h2 id="moneyDisplay">💰 0€</h2>
+
+  <input type="number" id="changeAmount" placeholder="+ ή - ποσό">
+  <button onclick="updateProgress()">OK</button>
+
+  <div class="bar-container">
+    <div id="bar"></div>
+    <div id="character">🚶</div>
+    <div class="finish">🏁</div>
+  </div>
+
+</div>
+
+<div class="reset-container">
+  <button class="reset-btn" onclick="resetApp()">🔴 Reset</button>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
