@@ -1,10 +1,11 @@
 {
-  "name": "Goal Tracker App",
-  "short_name": "Goals",
-  "start_url": ".",
+  "name": "Reach Your Goal",
+  "short_name": "Goal",
+  "start_url": "/goal-tracker-app/index.html",
+  "scope": "/goal-tracker-app/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
   "icons": [
     {
       "src": "icon-192.png",
