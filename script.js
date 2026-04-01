@@ -84,10 +84,6 @@ function updateUI() {
 
 // 🔴 RESET
 function resetApp() {
-  localStorage.removeItem("current");
-  localStorage.removeItem("goal");
-
-  sessionStorage.setItem("reset", "true");
-
-  window.location.href = "/goal-tracker-app/";
+  localStorage.clear();
+  window.location.href = "./";
 }
