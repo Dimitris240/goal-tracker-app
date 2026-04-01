@@ -84,5 +84,5 @@ function resetApp() {
 
   sessionStorage.setItem("reset", "true");
 
-  window.location.href = "./";
+  window.location.href = "./index.html";
 }
