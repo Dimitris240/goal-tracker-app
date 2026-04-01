@@ -3,12 +3,20 @@ body {
   background: linear-gradient(to right, #1e1e2f, #2c2c54);
   color: white;
   text-align: center;
+
+  margin: 0;
 }
 
 .container {
   max-width: 500px;
   margin: auto;
-  margin-top: 80px;
+  padding: 20px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -104,4 +112,13 @@ button:hover {
   opacity: 1;
   transform: scale(1.05);
   background: #ff1744;
+}
+
+input, button {
+  width: 90%;
+  max-width: 400px;
+}
+
+.reset-container {
+  margin-top: 20px;
 }
