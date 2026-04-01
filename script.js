@@ -11,7 +11,7 @@ const isReset = sessionStorage.getItem("reset");
 
 if (hasData && !isReset) {
   if (!window.location.pathname.includes("app.html")) {
-    window.location.href = "app.html";
+    window.location.href = "/goal-tracker-app/app.html";
   }
 }
 
@@ -30,7 +30,7 @@ function startApp() {
   localStorage.setItem("goal", goal);
 
   // μετάβαση
-  window.location.href = "app.html";
+  window.location.href = "/goal-tracker-app/app.html";
 }
 
 // 👉 Σελίδα 2 - φόρτωμα δεδομένων
@@ -84,5 +84,5 @@ function resetApp() {
 
   sessionStorage.setItem("reset", "true");
 
-  window.location.href = "./index.html";
+  window.location.href = "/goal-tracker-app/index.html";
 }
