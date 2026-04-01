@@ -9,12 +9,7 @@ const hasData =
 
 const isReset = sessionStorage.getItem("reset");
 
-// αν είμαστε στο root του GitHub Pages ΜΗΝ κάνεις redirect
-const isHomePage =
-  window.location.pathname === "/goal-tracker-app/" ||
-  window.location.pathname === "/goal-tracker-app/index.html";
-
-if (hasData && !isReset && !isHomePage) {
+if (hasData && !isReset) {
   if (!window.location.pathname.includes("app.html")) {
     window.location.href = "app.html";
   }
@@ -84,6 +79,10 @@ function updateUI() {
 
 // 🔴 RESET
 function resetApp() {
-  localStorage.clear();
-  window.location.href = "/goal-tracker-app/";
+  localStorage.removeItem("current");
+  localStorage.removeItem("goal");
+
+  sessionStorage.setItem("reset", "true");
+
+  window.location.href = "./";
 }
