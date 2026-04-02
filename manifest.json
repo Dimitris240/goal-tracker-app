@@ -1,6 +1,6 @@
 {
   "name": "Reach Your Goal",
-  "short_name": "Goal",
+  "short_name": "Reach-Your-Goal",
   "start_url": "/goal-tracker-app/index.html",
   "scope": "/goal-tracker-app/",
   "display": "standalone",
