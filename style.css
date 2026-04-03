@@ -1,92 +1,126 @@
 body {
-  margin: 0;
   font-family: Arial;
-  background: linear-gradient(135deg, #1d1f3a, #2c2f5c);
+  background: linear-gradient(to right, #1e1e2f, #2c2c54);
   color: white;
+  text-align: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  text-align: center;
-  width: 100%;
   max-width: 400px;
+  margin: auto;
+  padding: 20px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
 }
 
 h1 {
-  margin-bottom: 10px;
+  font-size: 32px;
 }
 
-.money {
-  margin-bottom: 20px;
-  font-size: 20px;
+h2 {
+  font-size: 26px;
 }
 
-/* Input */
 input {
-  width: 100%;
+  width: 80%;
   padding: 12px;
+  font-size: 18px;
+  margin: 10px 0;
   border-radius: 10px;
   border: none;
-  margin-bottom: 10px;
-  font-size: 16px;
 }
 
-/* OK button */
-.ok-btn {
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
   background: #00c853;
   color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-bottom: 25px;
+  transition: 0.2s;
 }
 
-.ok-btn:hover {
-  background: #00b248;
+button:hover {
+  background: #00e676;
 }
 
-/* Progress bar */
-.progress-bar {
+.bar-container {
+  margin-top: 40px;
   width: 100%;
-  height: 25px;
+  height: 40px;
   background: #555;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 25px;
 }
 
 #bar {
   height: 100%;
   width: 0%;
-  background: #00e676;
-  border-radius: 20px;
-  transition: 0.3s;
+  background: linear-gradient(to right, #00c853, #69f0ae);
+  transition: width 0.5s ease;
 }
 
 #character {
   position: absolute;
-  top: -20px;
-  left: 0%;
-  transform: translateX(-50%);
-  transition: 0.3s;
+  top: -30px;
+  left: 0;
+  font-size: 28px;
+  transition: left 0.5s ease;
 }
 
-/* Reset κάτω στο κέντρο */
+.finish {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  font-size: 28px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reset-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .reset-btn {
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
   background: #ff5252;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
+
+  opacity: 0.85;
+  transition: all 0.25s ease;
 }
 
 .reset-btn:hover {
+  opacity: 1;
+  transform: scale(1.05);
   background: #ff1744;
+}
+
+input, button {
+  width: 100%;
+  max-width: 400px;
+}
+
+.reset-container {
+  margin-top: 20px;
 }
