@@ -30,7 +30,6 @@ h2 {
 }
 
 input {
-  width: 100%;
   padding: 12px;
   font-size: 18px;
   margin: 10px 0;
@@ -117,6 +116,6 @@ button:hover {
 }
 
 input, button {
-  width: 100%;
+  width: 60%;
   max-width: 400px;
 }
