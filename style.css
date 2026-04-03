@@ -1,60 +1,87 @@
-body {
-  font-family: Arial;
-  background: linear-gradient(to right, #1e1e2f, #2c2c54);
-  color: white;
-  text-align: center;
-
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
-.container {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e1e2f, #2c2c54);
+  color: white;
 
+  margin: 0;
+
+  /* 🔥 Κεντράρει το app ΠΑΝΤΟΥ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+}
+
+/* 📱 Mobile-like card */
+.container {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 25px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 10px; 
+  gap: 12px;
+
+  /* ✨ App style */
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
 }
 
+/* 🔤 Titles */
 h1 {
-  font-size: 32px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
+/* 🧾 Inputs */
 input {
-  width: 80%;
-  padding: 12px;
-  font-size: 18px;
-  margin: 10px 0;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+
+  padding: 14px;
+  font-size: 16px;
+
+  border-radius: 12px;
   border: none;
 }
 
+/* 🟢 Buttons */
 button {
-  padding: 12px 25px;
-  font-size: 18px;
+  width: 100%;
+  max-width: 350px;
+
+  padding: 14px;
+  font-size: 16px;
+
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 12px;
   border: none;
+
   background: #00c853;
   color: white;
-  transition: 0.2s;
+
+  transition: all 0.2s ease;
 }
 
 button:hover {
   background: #00e676;
+  transform: scale(1.03);
 }
 
+/* 📊 Progress bar */
 .bar-container {
-  margin-top: 40px;
+  margin-top: 30px;
   width: 100%;
   height: 40px;
   background: #555;
@@ -85,20 +112,23 @@ button:hover {
   font-size: 28px;
 }
 
+/* 💬 Message */
 #message {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
+/* 🔴 Reset */
 .reset-container {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .reset-btn {
-  padding: 10px 22px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 14px;
+
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -106,7 +136,7 @@ button:hover {
   background: #ff5252;
   color: white;
 
-  opacity: 0.85;
+  opacity: 0.9;
   transition: all 0.25s ease;
 }
 
@@ -114,13 +144,4 @@ button:hover {
   opacity: 1;
   transform: scale(1.05);
   background: #ff1744;
-}
-
-input, button {
-  width: 100%;
-  max-width: 400px;
-}
-
-.reset-container {
-  margin-top: 20px;
 }
