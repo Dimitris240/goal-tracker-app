@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
   padding: 20px;
 
@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 10px; 
 }
 
 h1 {
@@ -115,7 +117,7 @@ button:hover {
 }
 
 input, button {
-  width: 90%;
+  width: 100%;
   max-width: 400px;
 }
 
