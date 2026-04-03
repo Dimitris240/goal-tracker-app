@@ -1,4 +1,4 @@
-const CACHE_NAME = "goal-app-v4";
+const CACHE_NAME = "goal-app-v5";
 const BASE_PATH = "/goal-tracker-app/";
 
 const urlsToCache = [
