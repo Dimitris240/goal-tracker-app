@@ -96,8 +96,7 @@ button:hover {
   text-align: center;
 }
 
-button.reset-btn {
-  width: 50%;
+.reset-btn {
   padding: 10px 22px;
   font-size: 16px;
   border-radius: 12px;
@@ -118,6 +117,6 @@ button.reset-btn {
 }
 
 button {
-  width: 50%;
+  width: 60%;
   max-width: 400px;
 }
