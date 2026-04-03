@@ -97,9 +97,9 @@ button:hover {
 }
 
 .reset-btn {
-  padding: 12px 26px;
+  padding: 10px 26px;
   font-size: 16px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
 
